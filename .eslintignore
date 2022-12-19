@@ -1,0 +1,7 @@
+**/*.d.ts
+**/*.js
+**/*.jsx
+node_modules
+build
+dist
+.next
