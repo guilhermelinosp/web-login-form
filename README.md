@@ -1,13 +1,10 @@
-# <div align="center"> Web Login Form </div>
+# <div align="center"> Login Form </div>
 
 </br>
 
 <div align="center">
+
 <p>🚧 It is in Development 🚧</p>
-
-</br>
-
-![image 1](/.github/image.png)
 
 </div>
 
@@ -25,7 +22,7 @@
 - Clone this repository
 
 ```shell
-git clone https://github.com/guilhermelinosx/web-login-form.git
+git clone https://github.com/guilhermelinosp/web-login-form.git
 ```
 
 </br>
