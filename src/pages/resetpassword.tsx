@@ -51,7 +51,7 @@ export default function ResetPassword() {
 							type={visible ? 'text' : 'password'}
 							autoCapitalize="none"
 							value={password}
-							onChange={password => setPassword(password.target.value)}
+							onChange={(password) => setPassword(password.target.value)}
 							className={stylesInput.input}
 							style={{ margin: 0, border: 0, marginBottom: 2, width: '100%' }}
 						/>
@@ -67,7 +67,7 @@ export default function ResetPassword() {
 							type={visible ? 'text' : 'password'}
 							autoCapitalize="none"
 							value={passwordConfirmation}
-							onChange={passwordConfirmation =>
+							onChange={(passwordConfirmation) =>
 								setPasswordConfirmation(passwordConfirmation.target.value)
 							}
 							style={{ margin: 0, border: 0, marginBottom: 2, width: '100%' }}
@@ -86,7 +86,7 @@ export default function ResetPassword() {
 	)
 }
 
-export const getServerSideProps = SSRPass(async ctx => {
+export const getServerSideProps = SSRPass(async (ctx) => {
 	return {
 		props: {}
 	}

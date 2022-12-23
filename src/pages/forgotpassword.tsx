@@ -41,7 +41,7 @@ export default function ForgotPassword() {
 						type="email"
 						autoCapitalize="none"
 						value={email}
-						onChange={email => setEmail(email.target.value)}
+						onChange={(email) => setEmail(email.target.value)}
 					/>
 
 					<Button loading={loading} onClick={handleForgotPassword} type="submit">
@@ -53,7 +53,7 @@ export default function ForgotPassword() {
 	)
 }
 
-export const getServerSideProps = SSRGuest(async ctx => {
+export const getServerSideProps = SSRGuest(async (ctx) => {
 	return {
 		props: {}
 	}

@@ -48,7 +48,7 @@ export default function Home() {
 						type="email"
 						autoCapitalize="none"
 						value={email}
-						onChange={email => setEmail(email.target.value)}
+						onChange={(email) => setEmail(email.target.value)}
 					/>
 
 					<div className={styles.passwordContent}>
@@ -57,7 +57,7 @@ export default function Home() {
 							type={visible ? 'text' : 'password'}
 							autoCapitalize="none"
 							value={password}
-							onChange={password => setPassword(password.target.value)}
+							onChange={(password) => setPassword(password.target.value)}
 							className={stylesInput.input}
 							style={{ margin: 0, border: 0, marginBottom: 2, width: '100%' }}
 						/>
@@ -86,7 +86,7 @@ export default function Home() {
 	)
 }
 
-export const getServerSideProps = SSRGuest(async ctx => {
+export const getServerSideProps = SSRGuest(async (ctx) => {
 	return {
 		props: {}
 	}

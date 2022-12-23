@@ -46,7 +46,7 @@ export default function CheckToken() {
 						type="text"
 						autoCapitalize="none"
 						value={token}
-						onChange={token => setToken(token.target.value)}
+						onChange={(token) => setToken(token.target.value)}
 					/>
 
 					<Button loading={loading} onClick={handleCheckToken} type="submit">
@@ -58,7 +58,7 @@ export default function CheckToken() {
 	)
 }
 
-export const getServerSideProps = SSRGuest(async ctx => {
+export const getServerSideProps = SSRGuest(async (ctx) => {
 	return {
 		props: {}
 	}

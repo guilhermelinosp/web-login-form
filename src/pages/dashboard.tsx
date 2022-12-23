@@ -24,7 +24,7 @@ export default function Dashboard() {
 	)
 }
 
-export const getServerSideProps = SSRAuth(async ctx => {
+export const getServerSideProps = SSRAuth(async (ctx) => {
 	return {
 		props: {}
 	}

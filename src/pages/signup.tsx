@@ -58,14 +58,14 @@ export default function SignUp() {
 						type="text"
 						autoCapitalize="none"
 						value={name}
-						onChange={name => setName(name.target.value)}
+						onChange={(name) => setName(name.target.value)}
 					/>
 					<Input
 						placeholder="Email"
 						type="email"
 						autoCapitalize="none"
 						value={email}
-						onChange={email => setEmail(email.target.value)}
+						onChange={(email) => setEmail(email.target.value)}
 					/>
 
 					<div className={styles.passwordContent}>
@@ -74,7 +74,7 @@ export default function SignUp() {
 							type={visible ? 'text' : 'password'}
 							autoCapitalize="none"
 							value={password}
-							onChange={password => setPassword(password.target.value)}
+							onChange={(password) => setPassword(password.target.value)}
 							className={stylesInput.input}
 							style={{ margin: 0, border: 0, marginBottom: 2, width: '100%' }}
 						/>
@@ -90,7 +90,7 @@ export default function SignUp() {
 							type={visible ? 'text' : 'password'}
 							autoCapitalize="none"
 							value={passwordConfirmation}
-							onChange={passwordConfirmation =>
+							onChange={(passwordConfirmation) =>
 								setPasswordConfirmation(passwordConfirmation.target.value)
 							}
 							style={{ margin: 0, border: 0, marginBottom: 2, width: '100%' }}
@@ -110,7 +110,7 @@ export default function SignUp() {
 	)
 }
 
-export const getServerSideProps = SSRGuest(async ctx => {
+export const getServerSideProps = SSRGuest(async (ctx) => {
 	return {
 		props: {}
 	}
